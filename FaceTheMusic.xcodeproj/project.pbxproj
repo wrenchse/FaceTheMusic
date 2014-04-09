@@ -34,8 +34,8 @@
 		5E5DF5A018E30AE200F0343F /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DF59F18E30AE200F0343F /* gui.cpp */; };
 		5E5DF5A318E3182D00F0343F /* analysis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DF5A118E3182D00F0343F /* analysis.cpp */; };
 		5E5DF5B318E38F0D00F0343F /* visuals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DF5B118E38F0D00F0343F /* visuals.cpp */; };
-		5E5DF5B918E390DF00F0343F /* faceVis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DF5B618E390DF00F0343F /* faceVis.cpp */; };
-		5E5DF5BA18E390DF00F0343F /* wrBack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DF5B818E390DF00F0343F /* wrBack.cpp */; };
+		5E79420218F55FD400A9440C /* faceVis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E7941FE18F55FD400A9440C /* faceVis.cpp */; };
+		5E79420318F55FD400A9440C /* wrBack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E79420018F55FD400A9440C /* wrBack.cpp */; };
 		62545D179C94265CA1389D4A /* OscOutboundPacketStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63A47AC60FFAFC3BF093EC0F /* OscOutboundPacketStream.cpp */; };
 		63020F16C7E8DED980111241 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6151136D101F857DAE12722 /* ofxCvImage.cpp */; };
 		640279EE111671BD026CB013 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2FAC65C491D4231379F3298 /* ofxOscReceiver.cpp */; };
@@ -201,10 +201,10 @@
 		5E5DF5A218E3182D00F0343F /* analysis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = analysis.h; sourceTree = "<group>"; };
 		5E5DF5B118E38F0D00F0343F /* visuals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = visuals.cpp; sourceTree = "<group>"; };
 		5E5DF5B218E38F0D00F0343F /* visuals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = visuals.h; sourceTree = "<group>"; };
-		5E5DF5B518E390DF00F0343F /* faceVis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = faceVis.h; path = ../../oscTester/src/faceVis.h; sourceTree = "<group>"; };
-		5E5DF5B618E390DF00F0343F /* faceVis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = faceVis.cpp; path = ../../oscTester/src/faceVis.cpp; sourceTree = "<group>"; };
-		5E5DF5B718E390DF00F0343F /* wrBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrBack.h; path = ../../oscTester/src/wrBack.h; sourceTree = "<group>"; };
-		5E5DF5B818E390DF00F0343F /* wrBack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = wrBack.cpp; path = ../../oscTester/src/wrBack.cpp; sourceTree = "<group>"; };
+		5E7941FE18F55FD400A9440C /* faceVis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceVis.cpp; sourceTree = "<group>"; };
+		5E7941FF18F55FD400A9440C /* faceVis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faceVis.h; sourceTree = "<group>"; };
+		5E79420018F55FD400A9440C /* wrBack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wrBack.cpp; sourceTree = "<group>"; };
+		5E79420118F55FD400A9440C /* wrBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrBack.h; sourceTree = "<group>"; };
 		5FBB4A8427353AED09174BE5 /* ContourFinder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ContourFinder.cpp; path = ../../../addons/ofxCv/libs/ofxCv/src/ContourFinder.cpp; sourceTree = SOURCE_ROOT; };
 		60179A75A6C5F9A54DA3A64C /* streams.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = streams.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/streams.hpp; sourceTree = SOURCE_ROOT; };
 		603F2267D449084A4187A049 /* ofxCvBlob.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxCvBlob.h; path = ../../../addons/ofxOpenCv/src/ofxCvBlob.h; sourceTree = SOURCE_ROOT; };
@@ -704,12 +704,12 @@
 		5E5DF5B418E390BA00F0343F /* components */ = {
 			isa = PBXGroup;
 			children = (
+				5E7941FE18F55FD400A9440C /* faceVis.cpp */,
+				5E7941FF18F55FD400A9440C /* faceVis.h */,
+				5E79420018F55FD400A9440C /* wrBack.cpp */,
+				5E79420118F55FD400A9440C /* wrBack.h */,
 				5E2F997718F4B58600090E77 /* faceVisKinect.cpp */,
 				5E2F997818F4B58600090E77 /* faceVisKinect.h */,
-				5E5DF5B518E390DF00F0343F /* faceVis.h */,
-				5E5DF5B618E390DF00F0343F /* faceVis.cpp */,
-				5E5DF5B718E390DF00F0343F /* wrBack.h */,
-				5E5DF5B818E390DF00F0343F /* wrBack.cpp */,
 			);
 			name = components;
 			sourceTree = "<group>";
@@ -1458,9 +1458,9 @@
 				5E5DF5A018E30AE200F0343F /* gui.cpp in Sources */,
 				5E5DF5A318E3182D00F0343F /* analysis.cpp in Sources */,
 				5E5DF5B318E38F0D00F0343F /* visuals.cpp in Sources */,
-				5E5DF5B918E390DF00F0343F /* faceVis.cpp in Sources */,
-				5E5DF5BA18E390DF00F0343F /* wrBack.cpp in Sources */,
 				5E2F997918F4B58600090E77 /* faceVisKinect.cpp in Sources */,
+				5E79420218F55FD400A9440C /* faceVis.cpp in Sources */,
+				5E79420318F55FD400A9440C /* wrBack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
