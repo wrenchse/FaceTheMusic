@@ -15,6 +15,7 @@
 #include "ofxOsc.h"
 #include "ofxPostGlitch.h"
 #include "faceVis.h"
+//#include "faceVisKinect.h"
 #include "wrBack.h"
 
 #define HOST "localhost"
@@ -65,6 +66,7 @@ public:
     ofImage img;         // The source image
     ofImage sig;
     faceVis fejsy;
+  //  faceVisKinect fejsK;
     wrBack backy;
     
     

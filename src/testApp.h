@@ -36,6 +36,9 @@ class testApp : public ofBaseApp{
     analysis analysis;
     visuals visuals;
     
+    vector <ofVec3f> depth;
+   
+    
     ofTrueTypeFont fonten;
  		
 };

@@ -37,7 +37,8 @@ void visuals::update(){
 
 		ofxOscMessage m;
 		receiver.getNextMessage(&m);
-        rms = m.getArgAsFloat(0);
+        
+        if(m.getAddress() == "/rms")  rms = m.getArgAsFloat(0)*2;
         
         string msg_string;
         
@@ -58,7 +59,7 @@ void visuals::update(){
 
 //--------------------------------------------------------------
 void visuals::draw(int offset){
-    
+
     wave = sin(ofGetElapsedTimef()/10)-1;
 
     myGlitch.generateFx();
@@ -69,7 +70,9 @@ void visuals::draw(int offset){
         ofTranslate(offset,0);
         fejsy.draw(picker,wave);
         ofPopMatrix();
-}
+    }
+    
+    //fejsK.draw();
 
 }
 

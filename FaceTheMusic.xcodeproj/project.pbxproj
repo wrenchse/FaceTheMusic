@@ -28,6 +28,7 @@
 		54F7230E7834FE4CB6279B49 /* ofxKinectInpainter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89182CA3A04937B48E5F53E3 /* ofxKinectInpainter.cpp */; };
 		5864AD82E20F15536D054EA3 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DF49D76C45D5DB505A234880 /* ofxOscMessage.cpp */; };
 		5CC34D433F5806179935B89D /* Flow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 03A75A648BC4CF1D9DEDD0CE /* Flow.cpp */; };
+		5E2F997918F4B58600090E77 /* faceVisKinect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E2F997718F4B58600090E77 /* faceVisKinect.cpp */; };
 		5E39F94A08ADD7F0C2032152 /* Delaunay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C93371FF2466553B4DA1D0B /* Delaunay.cpp */; };
 		5E5ABC8F3876CF57036C2E44 /* ofxSCSynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F7B28FF0B9D1B1B1ED8CE789 /* ofxSCSynth.cpp */; };
 		5E5DF5A018E30AE200F0343F /* gui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E5DF59F18E30AE200F0343F /* gui.cpp */; };
@@ -192,6 +193,8 @@
 		5A59183C98FC5E69FC90F138 /* contrib.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = contrib.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/contrib/contrib.hpp; sourceTree = SOURCE_ROOT; };
 		5CBF6AED6A17AC0C17F63CC4 /* RunningBackground.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RunningBackground.cpp; path = ../../../addons/ofxCv/libs/ofxCv/src/RunningBackground.cpp; sourceTree = SOURCE_ROOT; };
 		5D966EA1AA66E2D55D047733 /* blobtrack.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = blobtrack.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/opencv2/legacy/blobtrack.hpp; sourceTree = SOURCE_ROOT; };
+		5E2F997718F4B58600090E77 /* faceVisKinect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = faceVisKinect.cpp; sourceTree = "<group>"; };
+		5E2F997818F4B58600090E77 /* faceVisKinect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faceVisKinect.h; sourceTree = "<group>"; };
 		5E5DF59E18E30AD400F0343F /* gui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gui.h; sourceTree = "<group>"; };
 		5E5DF59F18E30AE200F0343F /* gui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gui.cpp; sourceTree = "<group>"; };
 		5E5DF5A118E3182D00F0343F /* analysis.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = analysis.cpp; sourceTree = "<group>"; };
@@ -701,6 +704,8 @@
 		5E5DF5B418E390BA00F0343F /* components */ = {
 			isa = PBXGroup;
 			children = (
+				5E2F997718F4B58600090E77 /* faceVisKinect.cpp */,
+				5E2F997818F4B58600090E77 /* faceVisKinect.h */,
 				5E5DF5B518E390DF00F0343F /* faceVis.h */,
 				5E5DF5B618E390DF00F0343F /* faceVis.cpp */,
 				5E5DF5B718E390DF00F0343F /* wrBack.h */,
@@ -1455,6 +1460,7 @@
 				5E5DF5B318E38F0D00F0343F /* visuals.cpp in Sources */,
 				5E5DF5B918E390DF00F0343F /* faceVis.cpp in Sources */,
 				5E5DF5BA18E390DF00F0343F /* wrBack.cpp in Sources */,
+				5E2F997918F4B58600090E77 /* faceVisKinect.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

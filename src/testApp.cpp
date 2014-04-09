@@ -8,6 +8,8 @@ void testApp::setup(){
     ofSetVerticalSync(false);
 
     fonten.loadFont("Letter Gothic Std", height/6);
+    
+     depth.resize(480*640);
 }
 
 //--------------------------------------------------------------
@@ -54,6 +56,35 @@ void testApp::draw(){
         
         ofDrawBitmapString("SCANNING", 10, 20);
         if(analysis.restart) {
+            
+            // SAVE IMAGES
+            gui.fajscrop.saveImage("faces/"+ofGetTimestampString()+".jpg");
+            
+            // SAVE DEPTHIMAGE INTO ARRAY
+            
+            
+//            for(int y = 0; y < 480; y ++) {
+//                for(int x = 0; x < 640; x++) {
+//                    int i = x+y*480;
+//                    depth[i] =  gui.kinect.getWorldCoordinateAt(x, y); //0.4f * kinectprevdis[i] + 0.6f *
+            
+//                    if(depth[i].z > 500 && depth[i].z < 1100.0) {      
+//                        //kinectprev[i] = 0.8f * kinectprev[i] + 0.2f * kinect.getWorldCoordinateAt(x, y);
+//                        //ofColor color = (0);
+//                        testimg[i].z /= 4;
+//                        mesh.addColor(0);
+//                        mesh.addVertex(testimg[i]);
+//                    }
+//                }
+//            }
+
+            
+            // PASS DEPTHIMAGE TO VISUALISER
+            
+//            visuals.fejsK.depth = depth;
+            
+            
+            // RESET THINGS
             gui.takesnapshot = false;
             analysis.thinking = false;
         }
