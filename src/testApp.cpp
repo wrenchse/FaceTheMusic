@@ -8,6 +8,7 @@ void testApp::setup(){
     ofSetVerticalSync(false);
 
     fonten.loadFont("Letter Gothic Std", height/6);
+//    fonten.loadFont("American Typewriter", height/6);
     
      depth.resize(480*640);
 }
@@ -56,6 +57,8 @@ void testApp::draw(){
         
         ofDrawBitmapString("SCANNING", 10, 20);
         if(analysis.restart) {
+            
+            visuals.picker = ofRandom(6);
             
             // SAVE IMAGES
             gui.fajscrop.saveImage("faces/"+ofGetTimestampString()+".jpg");

@@ -165,7 +165,7 @@ void analysis::distancesRatio(){
     
     
     ratios[0] = ratios[0] * smoother +  nasTippHaka /   munTillHaka             * (1.0-smoother);
-    ratios[1] = ratios[1] * smoother +  pupTillHaka  /   nasTippHaka             * (1.0-smoother);
+    ratios[1] = ratios[1] * smoother +  pupTillHaka  /   nasTippHaka            * (1.0-smoother);
     ratios[2] = ratios[2] * smoother +  pupTillHaka /   pupTillMun              * (1.0-smoother);
     ratios[3] = ratios[3] * smoother +  nasBredd    /   nasTillMun              * (1.0-smoother);
     ratios[4] = ratios[4] * smoother +  munBredd    /   nasBredd                * (1.0-smoother);

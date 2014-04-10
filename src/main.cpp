@@ -9,7 +9,7 @@ int main( ){
     
     ofAppGLFWWindow window;
     window.setMultiDisplayFullscreen(true);
-    ofSetupOpenGL(&window,800*2,600,OF_WINDOW);
+    ofSetupOpenGL(&window,1024*2,768,OF_FULLSCREEN);
 
 	ofRunApp( new testApp());
     

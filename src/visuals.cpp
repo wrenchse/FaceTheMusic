@@ -44,6 +44,17 @@ void visuals::update(){
         
 		msg_string += ofToString(m.getArgAsFloat(0));
 		msg_strings = msg_string;
+        
+//        
+//        ofxOscMessage f;
+//		receiver.getNextMessage(&f);
+//        
+//        if(f.getAddress() == "/face")  picker = m.getArgAsInt32(0);
+        
+        //string msg_string;
+        
+		//msg_string += ofToString(m.getArgAsFloat(0));
+		//msg_strings = msg_string;
 	}
     
     
